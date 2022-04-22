@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh ' cd /opt/student-exam2 && sudo docker build -t cicd_exam:webapp . '
+                sh ' cd /opt/student-exam2 && docker build -t cicd_exam:webapp . '
             }
         }
         stage('LoginDH') {
